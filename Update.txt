@@ -1,0 +1,13 @@
+        <!-- Bagian Ketiga (Terjemah Bahasa) -->
+        <div class="card">
+            <h2 class="title-translate">Terjemah Bahasa 🌐</h2>
+            <h2>KANTAN</h2>
+            <div class="button-grid">
+                <a href="" target="_blank" class="btn btn-translate">KONPYUTA x BASU <span class="emoji">🖥️</span></a>
+                <a href="" target="_blank" class="btn btn-translate">HARIMASU x CHICI <span class="emoji">🖼️</span></a>
+                <a href="" target="_blank" class="btn btn-translate">GAKUSEI x KAGI <span class="emoji">👩🏻‍🎓</span></a>
+                <a href="" target="_blank" class="btn btn-translate">MAGARIMASU x KOUEN <span class="emoji">⤴️</span></a>
+                <a href="" target="_blank" class="btn btn-translate">ORIMASU x OKASAN <span class="emoji">🚌</span></a>
+                <a href="" target="_blank" class="btn btn-translate">HARE x TOIRE <span class="emoji">🚽</span></a>
+            </div>
+        </div>
