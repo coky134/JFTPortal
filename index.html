@@ -51,6 +51,11 @@
             color: #6b46c1;
             border-bottom: 2px solid #faf5ff;
         }
+        /* Variasi warna judul untuk Hasil Ujian */
+        .card h2.title-result {
+            color: #dd6b20;
+            border-bottom: 2px solid #fffaf0;
+        }
         .button-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -64,6 +69,8 @@
             background-color: #3182ce;
             color: white;
             text-decoration: none;
+            border: none;
+            cursor: pointer;
             border-radius: 8px;
             font-weight: 600;
             font-size: 1.05em;
@@ -98,6 +105,16 @@
             box-shadow: 0 4px 8px rgba(128, 90, 213, 0.4);
         }
 
+        /* Tombol khusus Hasil Ujian */
+        .btn-result {
+            background-color: #dd6b20;
+            box-shadow: 0 2px 4px rgba(221, 107, 32, 0.3);
+        }
+        .btn-result:hover {
+            background-color: #c05621;
+            box-shadow: 0 4px 8px rgba(221, 107, 32, 0.4);
+        }
+
         .drive-container {
             margin-top: 20px;
             padding-top: 20px;
@@ -121,6 +138,14 @@
             <h1>PERIODE OKTOBER - NOVEMBER Kantan</h1>
         </header>
 
+        <!-- Bagian Hasil Ujian -->
+        <div class="card">
+            <h2 class="title-result">Hasil Ujian 📊</h2>
+            <button type="button" class="btn btn-result btn-full" onclick="WEB_Result(41224112, '../Result/TestResult');">
+                Menampilkan Hasil Ujian <span class="emoji">📜</span>
+            </button>
+        </div>
+
         <!-- Bagian Pertama (Tautan Reguler Kantan) -->
         <div class="card">
             <h2>KANTAN</h2>
@@ -132,8 +157,9 @@
                 <a href="https://forms.gle/RYrNckh2TK4QBk9F9" target="_blank" class="btn">ORIMASU x OKASAN <span class="emoji">🚌</span></a>
                 <a href="https://forms.gle/k3Zi5UikcSx4Ux1c6" target="_blank" class="btn">HARE x TOIRE <span class="emoji">🚽</span></a>
             </div>
-                    <!-- Bagian Keempat (Terjemah Bahasa KANTAN) -->
-            <h2 class="title-translate">Terjemah Bahasa 🌐</h2>
+            
+            <!-- Bagian Keempat (Terjemah Bahasa KANTAN) -->
+            <h2 class="title-translate" style="margin-top: 25px;">Terjemah Bahasa 🌐</h2>
             <div class="button-grid">
                 <a href="https://drive.google.com/file/d/1URE8xikFgwytzcoLyJtBQVnt2khz9Th_/view?usp=drive_link" target="_blank" class="btn btn-translate">KONPYUTA x BASU <span class="emoji">🖥️</span></a>
                 <a href="https://drive.google.com/file/d/1eA8BP2YZaU2aL6cMMh2x7uIllDspEqIf/view?usp=drive_link" target="_blank" class="btn btn-translate">HARIMASU x CHICI <span class="emoji">🖼️</span></a>
@@ -161,9 +187,8 @@
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLScmAtvNZUfrZVPadeYbgJjNoyZDnyOwOLcBefD3rppd3HfbhQ/viewform?usp=preview" target="_blank" class="btn">HARE x TOIRE <span class="emoji">🚽</span></a>
             </div>
             
-        <!-- Bagian Ketiga (Terjemah Bahasa IZZY) -->
-
-            <h2 class="title-translate">Terjemah Bahasa 🌐</h2>
+            <!-- Bagian Ketiga (Terjemah Bahasa IZZY) -->
+            <h2 class="title-translate" style="margin-top: 25px;">Terjemah Bahasa 🌐</h2>
             <div class="button-grid">
                 <a href="https://drive.google.com/file/d/1cHiZpjgzQXDsNKyOJdUHoHMFeHV5YaKW/view?usp=drive_link" target="_blank" class="btn btn-translate">KONPYUTA x BASU <span class="emoji">🖥️</span></a>
                 <a href="https://drive.google.com/file/d/1e0ze6ejV8dsd8w0Cr7-C7MUKULa0m6mj/view?usp=drive_link" target="_blank" class="btn btn-translate">HARIMASU x CHICI <span class="emoji">🖼️</span></a>
@@ -173,19 +198,16 @@
                 <a href="https://drive.google.com/file/d/16V31gKT9aPX8sjLue-0Yl2klqtRZ_c4b/view?usp=drive_link" target="_blank" class="btn btn-translate">HARE x TOIRE <span class="emoji">🚽</span></a>
             </div>
 
-            
             <div class="drive-container">
                 <p style="text-align: center; color: #4a5568; margin-bottom: 10px;"><strong>SILAKAN CHECK DI DRIVE JIKA INGIN MEMBUKA LEWAT DRIVE</strong></p>
                 <a href="https://drive.google.com/drive/folders/1TKubipQDwSkMV752iRUQp4OeSGZ_d0sT" target="_blank" class="btn btn-drive">Buka Folder Google Drive 2 📁</a>
             </div>
         </div>
 
-
-                <!-- Tombol Tambahan Latsol -->
-            <div class="drive-container">
-                <a href="https://drive.google.com/drive/folders/1ALEYnGpwAPX1xoQEmTmnHOBxpI6ppxUP?usp=drive_link" target="_blank" class="btn btn-translate btn-full">Latsol Oktober - November <span class="emoji">🖥️</span></a>
-            </div>        
-
+        <!-- Tombol Tambahan Latsol -->
+        <div class="drive-container">
+            <a href="https://drive.google.com/drive/folders/1ALEYnGpwAPX1xoQEmTmnHOBxpI6ppxUP?usp=drive_link" target="_blank" class="btn btn-translate btn-full">Latsol Oktober - November <span class="emoji">🖥️</span></a>
+        </div>        
 
     </div>
 
